@@ -31,6 +31,8 @@ user@host:~$ ls -lh ~/doesnotexist/ 2>> err.txt
 
 ## Combined *stdout* and *stderr* redirection
 
+**Note**: Order matters; **stdout** must come before **stderr**.
+
 **Input**
 
 ```bash
