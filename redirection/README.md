@@ -80,6 +80,17 @@ user@host:~$ ls -lh /bin/ &> out.txt    # write
 user@host:~$ ls -lh /bin/ &>> out.txt   # append
 ```
 
+**Redirection as input**
+
+Redirected output can also be used as input for commands.
+
+The following command uses the output from `out.txt` as input to the `cat`
+command, then redirects the output to the file `out_copy.txt`.
+
+```bash
+user@host:~$ cat < out.txt > out_copy.txt
+```
+
 ## Disregarding unwanted output
 
 To ignore output from a command, it may be redirected to `/dev/null`.
