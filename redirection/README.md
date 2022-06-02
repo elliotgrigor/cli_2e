@@ -79,3 +79,14 @@ user@host:~$ ls -lh /bin/ &> out.txt    # write
 ```bash
 user@host:~$ ls -lh /bin/ &>> out.txt   # append
 ```
+
+## Disregarding unwanted output
+
+To ignore output from a command, it may be redirected to `/dev/null`.
+
+The following command sends *standard output* to a file, and *standard
+error* into an empty void.
+
+```bash
+user@host:~$ ls -lh ~/doesnotexist/ >> out.txt 2> /dev/null
+```
