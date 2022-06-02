@@ -1,7 +1,8 @@
 
 # Redirection
 
-Using the output from a command elsewhere instead of printing it to the terminal.
+Using the output from a command elsewhere instead of printing it to the
+terminal.
 
 ## Redirecting standard output *(stdout)*
 
@@ -62,4 +63,17 @@ total 111M
 -rwxr-xr-x. 1 root root      16K Oct  5  2021 abrt-action-analyze-python
 -rwxr-xr-x. 1 root root     2.6K Oct  5  2021 abrt-action-analyze-vmcore
 ...
+```
+
+**Modern method**
+
+This operator combines both *standard output* and *standard error* and
+outputs both to the same file.
+
+```bash
+user@host:~$ ls -lh /bin/ &> out.txt    # write
+```
+
+```bash
+user@host:~$ ls -lh /bin/ &>> out.txt   # append
 ```
