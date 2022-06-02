@@ -80,7 +80,7 @@ user@host:~$ ls -lh /bin/ &> out.txt    # write
 user@host:~$ ls -lh /bin/ &>> out.txt   # append
 ```
 
-**Redirection as input**
+## Redirection as input
 
 Redirected output can also be used as input for commands.
 
