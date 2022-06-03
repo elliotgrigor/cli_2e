@@ -12,7 +12,6 @@ user@host:~$ ls -lh /bin/ > out.txt
 ```
 
 **Append**
-
 ```bash
 user@host:~$ ls -lh /bin/ >> out.txt
 ```
@@ -34,14 +33,12 @@ user@host:~$ ls -lh ~/doesnotexist/ 2>> err.txt
 **Note**: Order matters; **stdout** must come before **stderr**.
 
 **Input**
-
 ```bash
 user@host:~$ ls -lh /bin/ >> out.txt 2>> err.txt
 user@host:~$ ls -lh ~/doesnotexist/ >> out.txt 2>> err.txt
 ```
 
 **Output**
-
 ```bash
 -rw-r-----. 1 user user  74 Jun  1 18:10 err.txt
 -rw-r-----. 1 user user 56K Jun  1 18:10 out.txt
