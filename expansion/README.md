@@ -38,3 +38,35 @@ To list other user's home directories, append their username.
 user@host:~$ echo ~john   # if user "john" exists, expands to their home directory
 /home/john
 ```
+
+## Arithmetic Expansion
+
+The `$(( ... ))` syntax can be used to expand arithmetic to be used as
+standard input.
+
+Supported operators are as follows:
+
+| Operator | Description         |
+|----------|---------------------|
+| `+`      | Addition            |
+| `-`      | Subtraction         |
+| `*`      | Multiplication      |
+| `/`      | Division            |
+| `%`      | Modulo (remainder)  |
+| `**`     | Exponent (power of) |
+
+**Shell**
+```bash
+user@host:~$ echo $(( 5 + 5 ))
+10
+user@host:~$ echo $(( 25 - 9 ))
+16
+user@host:~$ echo $(( 16 * 4 ))
+64
+user@host:~$ echo $(( 107 / 7 )). Only integers are supported
+15. Only integers are supported
+user@host:~$ echo $(( 107 % 7 ))
+2
+user@host:~$ echo $(( 6 ** 9 ))
+10077696
+```
