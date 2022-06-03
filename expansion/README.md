@@ -28,13 +28,13 @@ user@host:~$ echo .[!.]*
 
 **Shell**
 ```bash
-user@host:~$ echo ~   # expands current user's home directory
+user@host:~$ echo ~   # expands to the current user's home directory
 /home/user
 ```
 
 To list other user's home directories, append their username.
 
 ```bash
-user@host:~$ echo ~john   # if user "john" exists, expands their home directory
+user@host:~$ echo ~john   # if user "john" exists, expands to their home directory
 /home/john
 ```
