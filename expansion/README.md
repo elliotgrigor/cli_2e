@@ -23,3 +23,18 @@ user@host:~$ echo .[!.]*
 .bash_logout .bashrc .cache .config .gitconfig .local .profile .ssh
 .viminfo .vimrc
 ```
+
+## Tilde Expansion
+
+**Shell**
+```bash
+user@host:~$ echo ~   # expands current user's home directory
+/home/user
+```
+
+To list other user's home directories, append their username.
+
+```bash
+user@host:~$ echo ~john   # if user "john" exists, expands their home directory
+/home/john
+```
