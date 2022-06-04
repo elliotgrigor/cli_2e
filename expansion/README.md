@@ -131,7 +131,7 @@ Known as ***zero padding***.
 Using shell variables to make selections.
 
 ```bash
-user@host:~/split_file$ echo $USER; echo $HOME; echo $GOPATH
+user@host:~$ echo $USER; echo $HOME; echo $GOPATH
 user
 /home/user
 /home/user/go
