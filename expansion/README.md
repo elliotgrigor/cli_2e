@@ -83,7 +83,7 @@ match the pattern within the braces.
 
 **Numbers**
 ```bash
-user@host:~/split_file$ echo bigfile.part{0..3}.zip
+user@host:~/split_file$ echo bigfile.part{0..3}.zip   # 0 to 3
 bigfile.part0.zip bigfile.part1.zip bigfile.part2.zip bigfile.part3.zip
 ```
 
