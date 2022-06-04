@@ -136,3 +136,12 @@ user
 /home/user
 /home/user/go
 ```
+
+## Command Substitution
+
+Using the output of a command as an expansion.
+
+```bash
+user@host:~$ ls -alh $(which go)
+lrwxrwxrwx 1 root root 18 Jun  2 10:43 /usr/bin/go -> /usr/lib/go/bin/go
+```
