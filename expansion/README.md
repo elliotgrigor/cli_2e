@@ -125,3 +125,14 @@ user@host:~/split_file$ ls -l bigfile.part{A{1,2,3},B{i,ii},C{01..4}}.zip
 In the above example, note that `01` is being used instead of `1`. This
 is a feature of bash >= 4.0, and allows for the prepending of zeros.
 Known as ***zero padding***.
+
+## Parameter Expansion
+
+Using shell variables to make selections.
+
+```bash
+user@host:~/split_file$ echo $USER; echo $HOME; echo $GOPATH
+user
+/home/user
+/home/user/go
+```
