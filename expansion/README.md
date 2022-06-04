@@ -83,12 +83,12 @@ match the pattern within the braces.
 
 **Numbers**
 ```bash
-user@host:~/split_file$ echo bigfile.part{0..3}.zip   # 0 to 3
+user@host:~/split_file$ ls bigfile.part{0..3}.zip   # 0 to 3
 bigfile.part0.zip bigfile.part1.zip bigfile.part2.zip bigfile.part3.zip
 ```
 
 **Letters**
 ```bash
-user@host:~/split_file$ echo alpha{K..P}.txt   # K to P
+user@host:~/split_file$ ls alpha{K..P}.txt   # K to P
 alphaK.txt alphaL.txt alphaM.txt alphaN.txt alphaO.txt alphaP.txt
 ```
