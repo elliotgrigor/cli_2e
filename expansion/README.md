@@ -1,6 +1,7 @@
 # Expansion
 
-Using wildcards to make broad selections of similarly named entities.
+Using wildcards and expressions to make broad selections of similarly
+named entities.
 
 ## Path Expansion
 
