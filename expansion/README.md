@@ -106,3 +106,22 @@ bigfile.part1.zip bigfile.part3.zip
 user@host:~/split_file$ ls alpha{A,M,Z}.txt   # only A, M, and Z
 alphaA.txt alphaM.txt alphaZ.txt
 ```
+
+### Nesting
+
+```bash
+user@host:~/split_file$ ls -l bigfile.part{A{1,2,3},B{i,ii},C{01..4}}.zip
+-rw-r----- 1 user user 0 Jun  4 14:31 bigfile.partA1.zip
+-rw-r----- 1 user user 0 Jun  4 14:31 bigfile.partA2.zip
+-rw-r----- 1 user user 0 Jun  4 14:31 bigfile.partA3.zip
+-rw-r----- 1 user user 0 Jun  4 14:31 bigfile.partBi.zip
+-rw-r----- 1 user user 0 Jun  4 14:31 bigfile.partBii.zip
+-rw-r----- 1 user user 0 Jun  4 14:31 bigfile.partC01.zip
+-rw-r----- 1 user user 0 Jun  4 14:31 bigfile.partC02.zip
+-rw-r----- 1 user user 0 Jun  4 14:31 bigfile.partC03.zip
+-rw-r----- 1 user user 0 Jun  4 14:31 bigfile.partC04.zip
+```
+
+In the above example, note that `01` is being used instead of `1`. This
+is a feature of bash >= 4.0, and allows for the prepending of zeros.
+Known as ***zero padding***.
