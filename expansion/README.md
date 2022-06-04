@@ -70,3 +70,7 @@ user@host:~$ echo $(( 107 % 7 ))
 user@host:~$ echo $(( 6 ** 9 ))
 10077696
 ```
+
+## Brace Expansion
+
+Creating matches using a specified pattern within `{}` braces.
