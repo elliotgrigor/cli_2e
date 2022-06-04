@@ -75,3 +75,20 @@ user@host:~$ echo $(( 6 ** 9 ))
 ## Brace Expansion
 
 Creating matches using a specified pattern within `{}` braces.
+
+Like path expansion, selections are made based on the entities which
+match the pattern within the braces.
+
+### Ranges
+
+**Numbers**
+```bash
+user@host:~/split_file$ echo bigfile.part{0..3}.zip
+bigfile.part0.zip bigfile.part1.zip bigfile.part2.zip bigfile.part3.zip
+```
+
+**Letters**
+```bash
+user@host:~/split_file$ echo alpha{K..P}.txt   # K to P
+alphaK.txt alphaL.txt alphaM.txt alphaN.txt alphaO.txt alphaP.txt
+```
