@@ -92,3 +92,17 @@ bigfile.part0.zip bigfile.part1.zip bigfile.part2.zip bigfile.part3.zip
 user@host:~/split_file$ ls alpha{K..P}.txt   # K to P
 alphaK.txt alphaL.txt alphaM.txt alphaN.txt alphaO.txt alphaP.txt
 ```
+
+### Selections
+
+**Numbers**
+```bash
+user@host:~/split_file$ ls bigfile.part{1,3}.zip   # only 1 and 3
+bigfile.part1.zip bigfile.part3.zip
+```
+
+**Letters**
+```bash
+user@host:~/split_file$ ls alpha{A,M,Z}.txt   # only A, M, and Z
+alphaA.txt alphaM.txt alphaZ.txt
+```
