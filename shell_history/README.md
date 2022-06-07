@@ -43,3 +43,23 @@ access to the `.bash_history` file's line number.
 user@host:~$ !109
 user@host:~/sf/js_dsa$
 ```
+
+## Incremental Search
+
+The shell history can be searched character by character using
+incremental search with the keyboard shortcut, **Ctrl+R**.
+
+Tip: **Ctrl+G** or **Ctrl+C** can be used to exit incremental search.
+
+**Shell**
+```bash
+(reverse-i-search)`':
+```
+
+```bash
+(reverse-i-search)`cd': cd ~/sf/js_dsa
+#    search term --^^   ^^-- result(s)   # keep pressing Ctrl+R to search further back
+```
+
+**Return ⏎** immediately executes the selected command.
+**Ctrl+J** copies the selected command to the shell prompt.
